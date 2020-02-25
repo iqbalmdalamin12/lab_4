@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>Lab 4</title>
+	    <link href="./Style.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	<body>
+	    <div>
+	        <h1 class="header" id="header">Lab 4 Header</h1>
+	    </div>
+	    <div class="content" id="content">
+	        hello world
+	    </div>
+        
+	    <script>
+	    </script>
+	</body>
+	</html>
+
+
+        <script>
+  var p1 = document.createElement("P");
+  p1.className = "p1";
+    var phrase1 ="my name has ";
+    var phrase2 =" characters";
+    var str1="MdAlAmin Iqbal";
+   var name = str1.replace(/ /g,"");
+    var m = name.length;
+     p1.innerHTML = phrase1.concat(m, phrase2);
+  document.getElementById("content").appendChild(p1);
+
+    
+    var p2 = document.createElement("P");
+    var firstname = "MdAlAmin";
+    var str ="The third character in my name is ";
+  p2.className = "p2";
+ var third = firstname.charAt(2);
+    var letter =  third.toUpperCase();
+    var final = str.concat(letter);
+  document.getElementById("content").appendChild(p2);
+    var lastname = "Iqbal";
+     var final3 = lastname.substring(2,5);
+    var space = "<br>";
+    p2.innerHTML =`${final} 
+${space}
+${final3}`;
+  
+   var fullName = "MdAlAmin Iqbal".split(' '),
+    fName = fullName[0],
+    lName = fullName[fullName.length - 1]; 
+    var n = fName.length+lName.length;
+    var str1 = "MdAlAmin Iqbal's ";
+    var str2 = " Lab 4";
+header.innerHTML=str1.concat(n, str2);
+
+</script>
